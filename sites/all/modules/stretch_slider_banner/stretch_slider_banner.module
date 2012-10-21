@@ -1,0 +1,14 @@
+<?php
+/**
+ * @file
+ * Code for the Stretch Slider Banner feature.
+ */
+
+include_once 'stretch_slider_banner.features.inc';
+
+/**
+ * Adds custom CSS
+ */
+function stretch_slider_banner_init() {
+    drupal_add_css(drupal_get_path('module', 'stretch_slider_banner') . '/stretch_slider_banner.css');
+}
