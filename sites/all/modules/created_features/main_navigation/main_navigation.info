@@ -1,0 +1,14 @@
+name = Main Navigation
+core = 7.x
+package = Features
+dependencies[] = ctools
+dependencies[] = features
+dependencies[] = menu
+dependencies[] = views
+features[ctools][] = views:views_default:3.0
+features[features_api][] = api:1
+features[menu_custom][] = main-menu
+features[menu_links][] = main-menu:<view>
+features[menu_links][] = main-menu:shop
+features[views_view][] = main_navigation
+features[views_view][] = main_navigation_children_view
