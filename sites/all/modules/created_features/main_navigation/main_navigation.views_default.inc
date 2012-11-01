@@ -28,15 +28,20 @@ function main_navigation_views_default_views() {
   $handler->display->display_options['query']['options']['query_comment'] = FALSE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'full';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
   $handler->display->display_options['style_options']['grouping'] = array(
     0 => array(
       'field' => 'name',
-      'rendered' => 1,
+      'rendered' => 0,
       'rendered_strip' => 0,
     ),
   );
+  $handler->display->display_options['style_options']['group']['element_type'] = 'div';
+  $handler->display->display_options['style_options']['list']['element_type'] = 'ul';
+  $handler->display->display_options['style_options']['row']['element_type'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 0;
   /* Field: Taxonomy term: Name */
   $handler->display->display_options['fields']['name']['id'] = 'name';
   $handler->display->display_options['fields']['name']['table'] = 'taxonomy_term_data';
@@ -128,8 +133,11 @@ function main_navigation_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'default';
+  $handler->display->display_options['style_plugin'] = 'semanticviews_default';
+  $handler->display->display_options['style_options']['row']['element_type'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
+  $handler->display->display_options['row_options']['hide_empty'] = 0;
+  $handler->display->display_options['row_options']['default_field_elements'] = 0;
   /* Relationship: Taxonomy term: Content using Product Demographic */
   $handler->display->display_options['relationships']['reverse_field_product_demographic_node']['id'] = 'reverse_field_product_demographic_node';
   $handler->display->display_options['relationships']['reverse_field_product_demographic_node']['table'] = 'taxonomy_term_data';
