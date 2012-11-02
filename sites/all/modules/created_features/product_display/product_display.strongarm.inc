@@ -59,7 +59,17 @@ function product_display_strongarm() {
       ),
     ),
     'extra_fields' => array(
-      'form' => array(),
+      'form' => array(
+        'sku' => array(
+          'weight' => '-10',
+        ),
+        'title' => array(
+          'weight' => '-5',
+        ),
+        'status' => array(
+          'weight' => '35',
+        ),
+      ),
       'display' => array(
         'sku' => array(
           'default' => array(
@@ -244,14 +254,14 @@ function product_display_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_vocab_menu_product_category';
-  $strongarm->value = 'main-menu';
+  $strongarm->value = '0';
   $export['taxonomy_menu_vocab_menu_product_category'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'taxonomy_menu_vocab_parent_product_category';
-  $strongarm->value = '990';
+  $strongarm->value = '0';
   $export['taxonomy_menu_vocab_parent_product_category'] = $strongarm;
 
   $strongarm = new stdClass();
