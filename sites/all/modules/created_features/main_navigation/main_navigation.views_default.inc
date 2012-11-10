@@ -38,6 +38,7 @@ function main_navigation_views_default_views() {
     ),
   );
   $handler->display->display_options['style_options']['group']['element_type'] = 'div';
+  $handler->display->display_options['style_options']['group']['class'] = 'demo-title';
   $handler->display->display_options['style_options']['list']['element_type'] = 'ul';
   $handler->display->display_options['style_options']['row']['element_type'] = '';
   $handler->display->display_options['row_plugin'] = 'fields';
