@@ -16,6 +16,10 @@ stylesheets-conditional[IE 7][all][] = ie7.css
 ; Theme specific styles. Any sub-themes should override this.
 stylesheets[all][] = styles/styles.css
 
+
+scripts[] = script.js
+
+
 regions[page_top]       = Page top
 regions[header]         = Header
 regions[search_box]     = Search Box
