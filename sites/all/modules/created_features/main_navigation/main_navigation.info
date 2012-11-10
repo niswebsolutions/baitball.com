@@ -5,6 +5,7 @@ php = 5.2.4
 dependencies[] = ctools
 dependencies[] = features
 dependencies[] = menu
+dependencies[] = menu_views
 dependencies[] = semanticviews
 dependencies[] = views
 features[ctools][] = views:views_default:3.0
