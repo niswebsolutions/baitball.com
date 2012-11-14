@@ -62,5 +62,6 @@ features[variable][] = taxonomy_menu_voc_item_product_category
 features[variable][] = taxonomy_menu_voc_name_product_category
 features[variable][] = taxonomy_menu_vocab_menu_product_category
 features[variable][] = taxonomy_menu_vocab_parent_product_category
+features[views_view][] = product_display_view
 features[views_view][] = products_similar_products
 features[views_view][] = products_taxonomy_view

@@ -95,7 +95,8 @@ function main_navigation_views_default_views() {
   $handler->display->display_options['fields']['name_1']['field'] = 'name';
   $handler->display->display_options['fields']['name_1']['relationship'] = 'term_node_tid';
   $handler->display->display_options['fields']['name_1']['label'] = '';
-  $handler->display->display_options['fields']['name_1']['alter']['alter_text'] = 0;
+  $handler->display->display_options['fields']['name_1']['alter']['alter_text'] = 1;
+  $handler->display->display_options['fields']['name_1']['alter']['text'] = '<a href="/shop/[name]/[name_1]">[name_1]</a>';
   $handler->display->display_options['fields']['name_1']['alter']['make_link'] = 0;
   $handler->display->display_options['fields']['name_1']['alter']['absolute'] = 0;
   $handler->display->display_options['fields']['name_1']['alter']['external'] = 0;
@@ -113,7 +114,7 @@ function main_navigation_views_default_views() {
   $handler->display->display_options['fields']['name_1']['hide_empty'] = 0;
   $handler->display->display_options['fields']['name_1']['empty_zero'] = 0;
   $handler->display->display_options['fields']['name_1']['hide_alter_empty'] = 1;
-  $handler->display->display_options['fields']['name_1']['link_to_taxonomy'] = 1;
+  $handler->display->display_options['fields']['name_1']['link_to_taxonomy'] = 0;
   $handler->display->display_options['fields']['name_1']['convert_spaces'] = 0;
   /* Filter criterion: Taxonomy vocabulary: Machine name */
   $handler->display->display_options['filters']['machine_name']['id'] = 'machine_name';
